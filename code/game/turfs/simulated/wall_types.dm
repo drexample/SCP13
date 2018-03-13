@@ -77,7 +77,7 @@
 
 
 
-// THIS IS THE ENTRANCE ZONE WALLS
+/*// THIS IS THE ENTRANCE ZONE WALLS
 /turf/simulated/wall/entrancezone/entrance_up
 	icon_state = "entrance_up"
 
@@ -89,3 +89,27 @@
 
 /turf/simulated/wall/entrancezone/entrance_right
 	icon_state = "entrance_right"
+
+*/
+
+// NEW WALLS
+
+/turf/simulated/wall/scp/r_wall/r_mid
+	icon_state = "r_mid"
+/turf/simulated/wall/r_wall/New(var/newloc)
+	..(newloc, "plasteel","plasteel") //3strong
+
+/turf/simulated/wall/scp/r_wall/r_end
+	icon_state = "r_end"
+/turf/simulated/wall/r_wall/New(var/newloc)
+	..(newloc, "plasteel","plasteel") //3strong
+
+/turf/simulated/wall/scp/r_wall/r_t
+	icon_state = "r_t"
+/turf/simulated/wall/r_wall/New(var/newloc)
+	..(newloc, "plasteel","plasteel") //3strong
+
+/turf/simulated/wall/scp/r_wall/r_x
+	icon_state = "r_x"
+/turf/simulated/wall/r_wall/New(var/newloc)
+	..(newloc, "plasteel","plasteel") //3strong
