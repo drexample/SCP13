@@ -843,3 +843,9 @@
 	else if (user.a_intent == I_HURT)
 		user.visible_message("<span class='warning'>[user] rings \the [src] repeatedly, signalling a disqualification!</span>")
 		playsound(user.loc, 'sound/items/manydings.ogg', 60)
+
+/obj/item/toy/scpj
+	name = "SCP-____-J"
+	desc = "It is a rock."
+	icon = 'icons/obj/toy.dmi'
+	icon_state = "scp-j"

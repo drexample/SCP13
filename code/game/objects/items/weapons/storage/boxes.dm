@@ -474,6 +474,11 @@
 	desc = "A box full of headsets."
 	startswith = list(/obj/item/device/radio/headset = 7)
 
+/obj/item/weapon/storage/box/scpj
+	name = "Vang's box"
+	desc = "'Vang's (sic) Stuf! dont touch' is written across the front."
+	startswith = list(/obj/item/toy/scpj = 1)
+
 //Spare Armbands
 
 /obj/item/weapon/storage/box/armband/engine
