@@ -62,13 +62,13 @@
 	)
 
 /obj/structure/closet/secure_closet/logistics/officer
-	name = "logistics officer's locker"
+	name = "logistics officer's footlocker"
 	req_access = list(access_qm)
-	icon_state = "secureqm1"
-	icon_closed = "secureqm"
-	icon_locked = "secureqm1"
-	icon_opened = "secureqmopen"
-	icon_off = "secureqmoff"
+	icon_state = "lolocked"
+	icon_closed = "loclosed"
+	icon_locked = "lolocked"
+	icon_opened = "loopen"
+	icon_off = "looff"
 /*
 /obj/structure/closet/secure_closet/logistics/officer/WillContain()
 	return list(
@@ -94,13 +94,13 @@
 	)
 */
 /obj/structure/closet/secure_closet/logistics/specialist
-	name = "logistics specialist's locker"
+	name = "logistics specialist's footlocker"
 	req_access = list(access_cargo)
-	icon_state = "securecargo1"
-	icon_closed = "securecargo"
-	icon_locked = "securecargo1"
-	icon_opened = "securecargoopen"
-	icon_off = "securecargooff"
+	icon_state = "lslocked"
+	icon_closed = "lsclosed"
+	icon_locked = "lslocked"
+	icon_opened = "lsopen"
+	icon_off = "lsoff"
 /*
 /obj/structure/closet/secure_closet/logistics/specialist/WillContain()
 	return list(
