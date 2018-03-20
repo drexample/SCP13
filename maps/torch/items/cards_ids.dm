@@ -166,6 +166,8 @@
 /obj/item/weapon/card/id/torch/passenger/research/liaison
 	job_access_type = /datum/job/liaison
 
+// SCP CARDS
+
 
 //Merchant
 /obj/item/weapon/card/id/torch/merchant
