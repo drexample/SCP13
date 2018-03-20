@@ -21,13 +21,22 @@
 	name = "Site DS90 Security Branch"
 	name_short = "SD90SB"
 	email_domain = "security.siteds90.foundation"
-/* AWAITING OVERHAUL BY LION
+
 	rank_types = list(
+		/datum/mil_rank/security/e2,
 		/datum/mil_rank/security/e3,
+		/datum/mil_rank/security/e4,
 		/datum/mil_rank/security/e5,
+		/datum/mil_rank/security/e6,
 		/datum/mil_rank/security/e7,
+		/datum/mil_rank/security/e8,
+		/datum/mil_rank/security/e9,
+		/datum/mil_rank/security/e9_alt1,
+		/datum/mil_rank/security/e9_alt2,
 		/datum/mil_rank/security/o1,
+		/datum/mil_rank/security/o2,
 		/datum/mil_rank/security/o3,
+		/datum/mil_rank/security/o4,
 		/datum/mil_rank/security/o5,
 		/datum/mil_rank/security/o6
 	)
@@ -41,7 +50,7 @@
 		/datum/mil_rank/security/o5,
 		/datum/mil_rank/security/o6
 	)
-*/
+
 	assistant_job = "Private"
 
 /datum/mil_branch/fleet
@@ -294,7 +303,7 @@
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/flag/o10_alt, /obj/item/clothing/accessory/solgov/specialty/officer)
 	sort_order = 20
 
-
+/* AWAITING OVERHAUL
 /*
  *  EC
  *  =====
@@ -352,7 +361,7 @@
 	name_short = "ADM"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/officer/o8)
 	sort_order = 16
-
+*/
 /*
  *  Civilians
  *  =========
