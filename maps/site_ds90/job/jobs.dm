@@ -120,7 +120,7 @@
 
 /datum/job/hos
 	title = "Chief of Security"
-	supervisors = "the Commanding Officer and the Executive Officer"
+	supervisors = "The Facility Director"
 	economic_modifier = 8
 	minimal_player_age = 21
 	ideal_character_age = 35
@@ -141,10 +141,6 @@
 			            access_hos, access_RC_announce, access_keycard_auth, access_sec_doors,
 			            access_solgov_crew, access_gun, access_emergency_armory)
 	minimal_access = list()
-
-	software_on_spawn = list(/datum/computer_file/program/comm,
-							 /datum/computer_file/program/digitalwarrant,
-							 /datum/computer_file/program/camera_monitor)
 
 /datum/job/liaison
 	title = "NanoTrasen Liaison"
