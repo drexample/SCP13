@@ -81,6 +81,26 @@
 	icon = 'icons/obj/doors/Doorsec.dmi'
 	assembly_type = /obj/structure/door_assembly/door_assembly_sec
 
+/obj/machinery/door/airlock/security/scphor
+	name = "Airlock"
+	icon = 'icons/obj/doors/Doorsechor.dmi'
+	assembly_type = /obj/structure/door_assembly/door_assembly_sec
+
+/obj/machinery/door/airlock/security/scpver
+	name = "Airlock"
+	icon = 'icons/obj/doors/Doorsecvert.dmi'
+	assembly_type = /obj/structure/door_assembly/door_assembly_sec
+
+/obj/machinery/door/airlock/security/scpheavhor
+	name = "Airlock"
+	icon = 'icons/obj/doors/Doorsecheavhor.dmi'
+	assembly_type = /obj/structure/door_assembly/door_assembly_sec
+
+/obj/machinery/door/airlock/security/scpheavver
+	name = "Airlock"
+	icon = 'icons/obj/doors/Doorsecheavvert.dmi'
+	assembly_type = /obj/structure/door_assembly/door_assembly_sec
+
 /obj/machinery/door/airlock/engineering
 	name = "Airlock"
 	icon = 'icons/obj/doors/Dooreng.dmi'
@@ -132,6 +152,34 @@
 
 	open_sound_powered = 'sound/machines/windowdoor.ogg'
 	close_sound_powered = 'sound/machines/windowdoor.ogg'
+
+	door_crush_damage = DOOR_CRUSH_DAMAGE*0.75
+	maxhealth = 300
+	explosion_resistance = 5
+	opacity = 0
+	glass = 1
+
+/obj/machinery/door/airlock/glass/scp
+	name = "Glass Airlock"
+	icon = 'icons/obj/doors/Doorglass.dmi'
+	hitsound = 'sound/effects/Glasshit.ogg'
+
+	open_sound_powered = 'sound/machines/AirlockOpen1.wav'
+	close_sound_powered = 'sound/machines/AirlockClose1.wav'
+
+	door_crush_damage = DOOR_CRUSH_DAMAGE*0.75
+	maxhealth = 300
+	explosion_resistance = 5
+	opacity = 0
+	glass = 1
+
+/obj/machinery/door/airlock/glass/scpvert
+	name = "Glass Airlock"
+	icon = 'icons/obj/doors/Doorglassvert.dmi'
+	hitsound = 'sound/effects/Glasshit.ogg'
+
+	open_sound_powered = 'sound/machines/AirlockOpen1.wav'
+	close_sound_powered = 'sound/machines/AirlockClose1.wav'
 
 	door_crush_damage = DOOR_CRUSH_DAMAGE*0.75
 	maxhealth = 300

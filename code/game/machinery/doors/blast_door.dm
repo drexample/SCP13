@@ -210,3 +210,5 @@
 
 /obj/machinery/door/blast/shutters/open
 	begins_closed = FALSE
+
+// SUBTYPE: SCP ONES
