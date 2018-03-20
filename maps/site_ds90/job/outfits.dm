@@ -39,21 +39,19 @@ Keeping them simple for now, just spawning with basic uniforms, and pretty much 
 */
 
 // SCP COMMAND OUTFITS
-/decl/hierarchy/outfit/job/torch/crew/command/facilitydir
+/decl/hierarchy/outfit/job/site90/crew/command/facilitydir
 	name = OUTFIT_JOB_NAME("Facility Director")
 	uniform = /obj/item/clothing/under/scp/suittie
 //	l_ear = /obj/item/device/radio/headset/heads/torchxo
 	shoes = /obj/item/clothing/shoes/dress
 //	id_type = /obj/item/weapon/card/id/torch/silver
-//	pda_type = /obj/item/device/pda/heads/hop
 
-/decl/hierarchy/outfit/job/torch/crew/command/headofhr
+/decl/hierarchy/outfit/job/site90/crew/command/headofhr
 	name = OUTFIT_JOB_NAME("Head of Human Resources")
 	uniform = /obj/item/clothing/under/scp/suittie
 //	l_ear = /obj/item/device/radio/headset/heads/torchxo
 	shoes = /obj/item/clothing/shoes/dress
 //	id_type = /obj/item/weapon/card/id/torch/silver
-//	pda_type = /obj/item/device/pda/heads/hop
 
 // END OF COMMAND OUTFITS
 
@@ -109,19 +107,28 @@ Keeping them simple for now, just spawning with basic uniforms, and pretty much 
 	name = OUTFIT_JOB_NAME("Chief Engineer - Fleet")
 	uniform = /obj/item/clothing/under/solgov/utility/fleet/engineering
 	shoes = /obj/item/clothing/shoes/dutyboots
+*/
 
-/decl/hierarchy/outfit/job/torch/crew/command/cos
-	name = OUTFIT_JOB_NAME("Chief of Security")
+// SECURITY OUTFITS
+
+/decl/hierarchy/outfit/job/site90/crew/command/cos
+	name = OUTFIT_JOB_NAME("Security Commander")
 	l_ear = /obj/item/device/radio/headset/heads/cos
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/security
+	uniform = /obj/item/clothing/under/scp/whiteuniform
 	shoes = /obj/item/clothing/shoes/dutyboots
-	id_type = /obj/item/weapon/card/id/torch/silver/security
-	pda_type = /obj/item/device/pda/heads/hos
+//	id_type = /obj/item/weapon/card/id/torch/silver/security
 
-/decl/hierarchy/outfit/job/torch/crew/command/cos/New()
+/decl/hierarchy/outfit/job/site90/crew/command/cos/New()
 	..()
 	BACKPACK_OVERRIDE_SECURITY
 
+
+/decl/hierarchy/outfit/site90/torch/crew/security/enlistedofficer
+	name = OUTFIT_JOB_NAME("Security Private")
+	uniform = /obj/item/clothing/under/scp/whiteuniform
+	shoes = /obj/item/clothing/shoes/dutyboots
+//	id_type = /obj/item/weapon/card/id/torch/crew/security
+/*
 /decl/hierarchy/outfit/job/torch/crew/command/cos/fleet
 	name = OUTFIT_JOB_NAME("Chief of Security - Fleet")
 	uniform = /obj/item/clothing/under/solgov/utility/fleet/combat/security

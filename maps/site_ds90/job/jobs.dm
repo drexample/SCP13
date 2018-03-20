@@ -7,7 +7,7 @@
 	minimal_player_age = 20
 	economic_modifier = 15
 	ideal_character_age = 50
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/facilitydir
+	outfit_type = /decl/hierarchy/outfit/job/site90/crew/command/facilitydir
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/scp)
 
@@ -19,7 +19,7 @@
 	minimal_player_age = 15
 	economic_modifier = 10
 	ideal_character_age = 45
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/headofhr
+	outfit_type = /decl/hierarchy/outfit/job/site90/crew/command/headofhr
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/scp)
 
@@ -117,31 +117,56 @@
 							 /datum/computer_file/program/rcon_console,
 							 /datum/computer_file/program/camera_monitor,
 							 /datum/computer_file/program/shields_monitor)
+*/
 
+// SECURITY
 /datum/job/hos
-	title = "Chief of Security"
+	title = "Security Commander"
 	supervisors = "The Facility Director"
 	economic_modifier = 8
 	minimal_player_age = 21
 	ideal_character_age = 35
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/cos
+	outfit_type = /decl/hierarchy/outfit/job/site90/crew/command/cos
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/command/cos/fleet
+		/datum/mil_branch/security,
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/o3,
-		/datum/mil_rank/fleet/o3,
-		/datum/mil_rank/fleet/o2
+		/datum/mil_rank/security/o6
 	)
 
-	access = list(access_security, access_brig, access_armory, access_forensics_lockers,
-			            access_maint_tunnels, access_external_airlocks, access_emergency_storage,
-			            access_teleporter, access_eva, access_heads,
-			            access_hos, access_RC_announce, access_keycard_auth, access_sec_doors,
-			            access_solgov_crew, access_gun, access_emergency_armory)
+	access = list(access_mtflvl1, access_mtflvl2, access_mtflvl3, access_mtflvl4, access_mtflvl5)
 	minimal_access = list()
 
+/datum/job/enlistedofficer
+	title = "Security Private"
+	total_positions = 6
+	spawn_positions = 6
+	supervisors = "the Chief of Security"
+	economic_modifier = 4
+	minimal_player_age = 10
+	ideal_character_age = 25
+	alt_titles = null
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/security/maa
+	allowed_branches = list(
+		/datum/mil_branch/expeditionary_corps,
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/security/maa/fleet
+	)
+	allowed_ranks = list(
+		/datum/mil_rank/security/e2
+	)
+
+
+	access = list(access_security, access_brig, access_maint_tunnels,
+						access_external_airlocks, access_emergency_storage,
+			            access_eva, access_sec_doors, access_solgov_crew)
+	minimal_access = list()
+
+	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
+							 /datum/computer_file/program/camera_monitor)
+
+
+
+/*
 /datum/job/liaison
 	title = "NanoTrasen Liaison"
 	department = "Support"
