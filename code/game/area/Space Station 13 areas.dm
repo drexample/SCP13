@@ -170,6 +170,12 @@ area/space/atmosalert()
 	name = "\improper Elite Mercenary Squad"
 	icon_state = "syndie-elite"
 
+/area/site90/topsideinterior
+	name = "\improper Topside Interior"
+	icon_state = "centcom"
+	requires_power = 0
+	dynamic_lighting = 0
+
 ////////////
 //SHUTTLES//
 ////////////
@@ -244,3 +250,5 @@ area/space/atmosalert()
 					sound_to(H, S)
 
 	spawn(60) .()
+
+
