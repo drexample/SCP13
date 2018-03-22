@@ -265,12 +265,17 @@
 		to each individual headset.
 	*/
 
+
+
 	//#### Grab the connection datum ####//
 	var/datum/radio_frequency/connection = handle_message_mode(M, message, channel)
 	if (!istype(connection))
 		return 0
 
 	var/turf/position = get_turf(src)
+
+	/*  PlAY BUZZ SOUND SCP EDIT   */
+	playsound(src, 'sound/effects/radiohiss.ogg', 10)
 
 	//#### Tagging the signal with all appropriate identity values ####//
 
